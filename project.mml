@@ -1,0 +1,149 @@
+{
+  "bounds": [
+    -113.2031,
+    -1.9332,
+    -61.9629,
+    32.8427
+  ],
+  "center": [
+    -89.8901,
+    17.1408,
+    6
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 3,
+  "maxzoom": 9,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "labels.mss"
+  ],
+  "Layer": [
+    {
+      "id": "land",
+      "name": "land",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-land.zip"
+      },
+      "geometry": "polygon"
+    },
+    {
+      "id": "urban",
+      "name": "urban",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-urban-areas.zip"
+      },
+      "geometry": "polygon",
+      "status": "off"
+    },
+    {
+      "id": "lakes",
+      "name": "lakes",
+      "srs": "",
+      "class": "water-poly",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-lakes.zip"
+      },
+      "geometry": "polygon",
+      "status": "off"
+    },
+    {
+      "id": "geo-lines",
+      "name": "geo-lines",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-geographic-lines.zip",
+        "id": "geo-lines",
+        "project": "maya_map",
+        "srs": ""
+      },
+      "geometry": "linestring",
+      "extent": [
+        -180,
+        -85.051,
+        179.99999620397597,
+        85.051
+      ]
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.4973025103,
+        13.1947365761,
+        -85.5624400427,
+        21.60718
+      ],
+      "id": "maya",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya.kml"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "maya"
+    },
+    {
+      "id": "international_boundaries",
+      "name": "international_boundaries",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-land.zip"
+      },
+      "geometry": "linestring"
+    },
+    {
+      "id": "map-units",
+      "name": "map-units",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-map-units.zip"
+      },
+      "geometry": "polygon"
+    },
+    {
+      "id": "subnational_boundaries",
+      "name": "subnational_boundaries",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-1-states-provinces-lines.zip"
+      },
+      "geometry": "linestring"
+    },
+    {
+      "id": "country-labels",
+      "name": "country-labels",
+      "srs": "",
+      "class": "",
+      "geometry": "point",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip"
+      }
+    },
+    {
+      "id": "cities",
+      "name": "cities",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip"
+      },
+      "geometry": "point"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Maya sites",
+  "description": "Experiment, mapping the The Electronic Atlas of Ancient Maya Sites.\nOriginal data by Dr. Clifford T. Brown at Florida Atlantic University and Dr. Walter R. T. Witschey at Longwood University.",
+  "attribution": "Science Museum of Minnesota, Dr. Clifford T. Brown, Dr. Walter R. T. Witschey",
+  "legend": ""
+}
