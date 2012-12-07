@@ -23,6 +23,11 @@ Map { background-color:@ocean; }
 /* Control room default */
 /*@landbg: #0A202A;*/
 
+#land[zoom>=0] {
+  polygon-fill: @landbg;
+  polygon-gamma:0.7;
+}
+
 #land::glow-inner[zoom>0] {
   line-color:@land-glow;
   line-width:1.2;
@@ -49,11 +54,6 @@ Map { background-color:@ocean; }
   line-width:5;
   line-join:round;
   line-opacity:0.05;
-}
-
-#land[zoom>=0] {
-  polygon-fill: @landbg;
-  polygon-gamma:0.7;
 }
 
 #international_boundaries[zoom>1] {
