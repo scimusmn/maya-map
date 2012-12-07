@@ -103,10 +103,65 @@ Map { background-color:@ocean; }
   [zoom>6] { line-width:1.2; }
 }
 
-#maya {
-  marker-width:3;
-  marker-fill:#f45;
-  marker-line-color:#813;
+.maya {
   marker-allow-overlap:true;
-  marker-opacity: .2;
+
+  /* Beeswax yellow */
+  marker-fill:#ffcc66;
+  marker-line-color:#000;
+  /* Light tan */
+  /*marker-fill:#CF7361;*/
+  /*marker-line-color:#D28E4F;*/
+
+  /* Mayan cinabar */
+  /*marker-fill:#771823;*/
+
+  /* Control room default */
+  /*marker-line-color:#938562;*/
 }
+
+#maya-rank-01 {
+  marker-width:10;
+}
+
+#maya-rank-01[zoom>5]{
+  text-name:"[Name]";
+  text-face-name:@sans;
+  text-fill: #FFF;
+  text-allow-overlap: true;
+  text-min-distance: 20;
+  text-opacity: .5;
+  text-size: 15;
+  text-placement-type: simple;
+  text-placements: "E";
+  text-wrap-width:40;
+  text-dy: 0;
+  text-dx: 10;
+  [zoom=6] { text-size:10; }
+  [zoom=7] { text-size:12; }
+}
+
+#maya-rank-02 {
+  marker-width:5;
+  marker-opacity:.06;
+}
+
+#maya-rank-02[zoom>7]{
+}
+
+#maya-rank-03 {
+  marker-width:.5;
+  marker-opacity:.05;
+}
+
+#maya-all-points {
+  marker-width:1;
+  marker-fill:#ffcc66;
+  marker-line-color:#ffcc66;
+  [zoom=7],[zoom=8] {
+    marker-line-color:#ffcc66;
+  }
+  marker-allow-overlap:true;
+  marker-opacity: .05;
+}
+
