@@ -14,32 +14,41 @@ Map { background-color:@ocean; }
 .water-poly { polygon-fill:@ocean; }
 
 #land::glow-inner[zoom>0] {
-  line-color:#225160;
+  line-color:#2E333E;
   line-width:1.2;
   line-join:round;
   line-opacity:0.4;
 }
 #land::glow-innermiddle[zoom>1] {
-  line-color:#225160;
+  line-color:#2E333E;
   line-width:2.5;
   line-join:round;
   line-opacity:0.2;
 }
 #land::glow-outermiddle[zoom>2] {
-  line-color:#225160;
+  line-color:#2E333E;
   line-width:5;
   line-join:round;
   line-opacity:0.1;
 }
 #land::glow-outer[zoom>3] {
-  line-color:#225160;
+  line-color:#2E333E;
   line-width:5;
   line-join:round;
   line-opacity:0.05;
 }
 
 #land[zoom>=0] {
-  polygon-fill:#0A202A;
+  /* Land as background fabric dark blue */
+  /*polygon-fill:#2E333E;*/
+
+  /* Land as olive green */
+  /*polygon-fill:#493C20;*/
+
+  /* Control room default */
+  /*polygon-fill:#0A202A;*/
+
+  polygon-fill: @landbg;
   polygon-gamma:0.7;
 }
 
