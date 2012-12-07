@@ -92,9 +92,9 @@ Map { background-color:@ocean; }
 }
 
 #urban {
-  polygon-fill:#9F6;
-  polygon-opacity:0.66;
-  line-color:#9F6;
+  polygon-fill:#9933ff;
+  polygon-opacity:.4;
+  line-color:#333;
   line-opacity:0.33;
   [zoom=3] { line-width:0.4; }
   [zoom=4] { line-width:0.6; }
