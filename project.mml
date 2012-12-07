@@ -11,7 +11,15 @@
     6
   ],
   "format": "png",
-  "interactivity": false,
+  "interactivity": {
+    "layer": "maya-rank-01",
+    "template_teaser": "<strong>{{{Name}}}</strong><br />\n{{{Description}}}",
+    "template_full": "",
+    "fields": [
+      "Name",
+      "Description"
+    ]
+  },
   "minzoom": 3,
   "maxzoom": 9,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -31,17 +39,6 @@
       "geometry": "polygon"
     },
     {
-      "id": "urban",
-      "name": "urban",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-urban-areas.zip"
-      },
-      "geometry": "polygon",
-      "status": "off"
-    },
-    {
       "id": "lakes",
       "name": "lakes",
       "srs": "",
@@ -49,8 +46,7 @@
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-lakes.zip"
       },
-      "geometry": "polygon",
-      "status": "off"
+      "geometry": "polygon"
     },
     {
       "id": "geo-lines",
@@ -69,25 +65,8 @@
         -85.051,
         179.99999620397597,
         85.051
-      ]
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -96.4973025103,
-        13.1947365761,
-        -85.5624400427,
-        21.60718
       ],
-      "id": "maya",
-      "class": "",
-      "Datasource": {
-        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya.kml"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "maya"
+      "status": "off"
     },
     {
       "id": "international_boundaries",
@@ -107,7 +86,8 @@
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-map-units.zip"
       },
-      "geometry": "polygon"
+      "geometry": "polygon",
+      "status": "off"
     },
     {
       "id": "subnational_boundaries",
@@ -117,7 +97,8 @@
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-1-states-provinces-lines.zip"
       },
-      "geometry": "linestring"
+      "geometry": "linestring",
+      "status": "off"
     },
     {
       "id": "country-labels",
@@ -127,7 +108,19 @@
       "geometry": "point",
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip"
-      }
+      },
+      "status": "off"
+    },
+    {
+      "id": "urban",
+      "name": "urban",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-urban-areas.zip"
+      },
+      "geometry": "polygon",
+      "status": "off"
     },
     {
       "id": "cities",
@@ -137,7 +130,84 @@
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip"
       },
-      "geometry": "point"
+      "geometry": "point",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.4973025103,
+        13.1947365761,
+        -85.5624400427,
+        21.60718
+      ],
+      "id": "maya-all-points",
+      "class": "maya",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya.kml"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "maya-all-points",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.4973025103,
+        13.1947365761,
+        -85.5624400427,
+        21.60718
+      ],
+      "id": "maya-rank-03",
+      "class": "maya",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya_rank_03.kml"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "maya-rank-03"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -95.43124000000002,
+        13.88387,
+        -87.42876666666666,
+        21.445738405
+      ],
+      "id": "maya-rank-02",
+      "class": "maya",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya_rank_02.kml"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "maya-rank-02"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -93.20184,
+        14.632833329999999,
+        -87.73307,
+        20.970704367280007
+      ],
+      "id": "maya-rank-01",
+      "class": "maya",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya_rank_01.kml",
+        "id": "maya-rank-01",
+        "project": "maya_map",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "maya-rank-01"
     }
   ],
   "scale": 1,
@@ -145,5 +215,5 @@
   "name": "Maya sites",
   "description": "Experiment, mapping the The Electronic Atlas of Ancient Maya Sites.\nOriginal data by Dr. Clifford T. Brown at Florida Atlantic University and Dr. Walter R. T. Witschey at Longwood University.",
   "attribution": "Science Museum of Minnesota, Dr. Clifford T. Brown, Dr. Walter R. T. Witschey",
-  "legend": ""
+  "legend": "<strong>Ancient Mayan civilization</strong><br />\nThe size of the yellow dot roughly corresponds to the size of the archaeological site.\nPurple areas are modern urban centers."
 }
