@@ -2,11 +2,16 @@
  * Maya
  **********************************************************/
 
-@base: #001420;
+/*
+ * Color variables
+ */
+/* Ocean */
+@base: #548696;
+@ocean: @base;
+@landbg: #111;
 
-Map { background-color:@base; }
-
-.water-poly { polygon-fill:@base; }
+Map { background-color:@ocean; }
+.water-poly { polygon-fill:@ocean; }
 
 #land::glow-inner[zoom>0] {
   line-color:#225160;
