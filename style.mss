@@ -56,8 +56,9 @@ Map { background-color:@ocean; }
 
 #international_boundaries[zoom>1] {
   line-color:#0AF;
-  line-dasharray:1,1;
+  line-dasharray:1,3;
   line-width:0.5;
+  line-opacity:0.5;
   [zoom=4] { line-width:0.6; }
   [zoom=5] { line-width:0.8; }
   [zoom=6] { line-width:1; }
@@ -83,7 +84,7 @@ Map { background-color:@ocean; }
 }
 
 #geo-lines[ScaleRank<10] {
-  line-color:#B2A;
+  line-color:#ba22a8;
   line-dasharray:1,4;
   line-opacity:0.8;
   line-width:0.25;
