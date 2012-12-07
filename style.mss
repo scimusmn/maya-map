@@ -1,58 +1,60 @@
 /**********************************************************
- * Maya
+ *                        Maya
  **********************************************************/
 
-/*
- * Color variables
- */
-/* Ocean */
+/**********************************************************
+ * Ocean base
+ **********************************************************/
 @base: #548696;
 @ocean: @base;
-@landbg: #111;
 
 Map { background-color:@ocean; }
 .water-poly { polygon-fill:@ocean; }
 
+/**********************************************************
+ * Land base
+ **********************************************************/
+@landbg: #111;
+@land-glow: #2E333E;
+
+/* Land as olive green */
+/*@landbg: #493C20;*/
+
+/* Control room default */
+/*@landbg: #0A202A;*/
+
 #land::glow-inner[zoom>0] {
-  line-color:#2E333E;
+  line-color:@land-glow;
   line-width:1.2;
   line-join:round;
   line-opacity:0.4;
 }
+
 #land::glow-innermiddle[zoom>1] {
-  line-color:#2E333E;
+  line-color:@land-glow;
   line-width:2.5;
   line-join:round;
   line-opacity:0.2;
 }
+
 #land::glow-outermiddle[zoom>2] {
-  line-color:#2E333E;
+  line-color:@land-glow;
   line-width:5;
   line-join:round;
   line-opacity:0.1;
 }
+
 #land::glow-outer[zoom>3] {
-  line-color:#2E333E;
+  line-color:@land-glow;
   line-width:5;
   line-join:round;
   line-opacity:0.05;
 }
 
 #land[zoom>=0] {
-  /* Land as background fabric dark blue */
-  /*polygon-fill:#2E333E;*/
-
-  /* Land as olive green */
-  /*polygon-fill:#493C20;*/
-
-  /* Control room default */
-  /*polygon-fill:#0A202A;*/
-
   polygon-fill: @landbg;
   polygon-gamma:0.7;
 }
-
-
 
 #international_boundaries[zoom>1] {
   line-color:#0AF;
@@ -108,7 +110,7 @@ Map { background-color:@ocean; }
 
   /* Beeswax yellow */
   marker-fill:#ffcc66;
-  marker-line-color:#000;
+  marker-line-color:@landbg;
   /* Light tan */
   /*marker-fill:#CF7361;*/
   /*marker-line-color:#D28E4F;*/
