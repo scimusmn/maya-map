@@ -44,9 +44,18 @@
       "srs": "",
       "class": "water-poly",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-lakes.zip"
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-lakes.zip",
+        "id": "lakes",
+        "project": "maya_map",
+        "srs": ""
       },
-      "geometry": "polygon"
+      "geometry": "polygon",
+      "extent": [
+        -165.96561893930925,
+        -50.6696248183775,
+        176.0938293028783,
+        81.95527752537252
+      ]
     },
     {
       "id": "geo-lines",
