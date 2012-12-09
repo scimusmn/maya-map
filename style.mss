@@ -164,7 +164,7 @@ Map { background-color:@ocean; }
   marker-opacity:.06;
   [zoom>9] {
     marker-width:4;
-    marker-opacity:.1;
+    marker-opacity:.2;
   }
   [zoom>11] {
     marker-width:7;
