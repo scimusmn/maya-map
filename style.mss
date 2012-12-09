@@ -15,7 +15,6 @@ Map { background-color:@ocean; }
  * Land base
  **********************************************************/
 @landbg: #111;
-@land-glow: #2E333E;
 
 /* Land as olive green */
 /*@landbg: #493C20;*/
@@ -25,35 +24,7 @@ Map { background-color:@ocean; }
 
 #land[zoom>=0] {
   polygon-fill: @landbg;
-  polygon-gamma:0.7;
-}
-
-#land::glow-inner[zoom>0] {
-  line-color:@land-glow;
-  line-width:1.2;
-  line-join:round;
-  line-opacity:0.4;
-}
-
-#land::glow-innermiddle[zoom>1] {
-  line-color:@land-glow;
-  line-width:2.5;
-  line-join:round;
-  line-opacity:0.2;
-}
-
-#land::glow-outermiddle[zoom>2] {
-  line-color:@land-glow;
-  line-width:5;
-  line-join:round;
-  line-opacity:0.1;
-}
-
-#land::glow-outer[zoom>3] {
-  line-color:@land-glow;
-  line-width:5;
-  line-join:round;
-  line-opacity:0.05;
+  polygon-gamma:0.3;
 }
 
 #international_boundaries[zoom>1] {
