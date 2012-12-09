@@ -1,2 +1,11 @@
 .thumb.png
-layers
+layers/cities
+layers/country-labels
+layers/geo-lines
+layers/international_boundaries
+layers/lakes
+layers/land
+layers/map-units
+layers/subnational_boundaries
+layers/urban
+
