@@ -153,7 +153,7 @@
       "id": "maya-all-points",
       "class": "maya",
       "Datasource": {
-        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya.kml"
+        "file": "./layers/maya_rank_all.kml"
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -172,7 +172,10 @@
       "id": "maya-rank-03",
       "class": "maya",
       "Datasource": {
-        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya_rank_03.kml"
+        "file": "./layers/maya_rank_03.kml",
+        "id": "maya-rank-03",
+        "project": "maya_map",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -190,7 +193,7 @@
       "id": "maya-rank-02",
       "class": "maya",
       "Datasource": {
-        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya_rank_02.kml"
+        "file": "./layers/maya_rank_02.kml"
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -208,7 +211,7 @@
       "id": "maya-rank-01",
       "class": "maya",
       "Datasource": {
-        "file": "/Users/bkennedy/Documents/Maps/Maya civilization/maya_rank_01.kml",
+        "file": "./layers/maya_rank_01.kml",
         "id": "maya-rank-01",
         "project": "maya_map",
         "srs": ""
