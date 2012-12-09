@@ -134,9 +134,9 @@ Map { background-color:@ocean; }
   [zoom>3] { marker-width:3; marker-opacity:.03; }
   [zoom>5] { marker-width:4; marker-opacity:.05; }
   [zoom>6] { marker-width:6; marker-opacity:.1; }
-  [zoom>7] { marker-width:7; marker-opacity:.15; }
+  [zoom>7] { marker-width:8; marker-opacity:.15; }
   [zoom>8] {
-    marker-width:8;
+    marker-width:9;
     marker-opacity:.2;
     text-name:"[Name]";
     text-face-name:@sans;
@@ -149,11 +149,37 @@ Map { background-color:@ocean; }
     text-dy: 10;
     text-dx: 10;
   }
+  [zoom>9] {
+    marker-width:10;
+    marker-opacity:.3;
+  }
+  [zoom>11] {
+    marker-width:14;
+    marker-opacity:.3;
+  }
 }
 
 #maya-rank-03 {
-  marker-width:.5;
-  marker-opacity:.05;
+  marker-width:2;
+  marker-opacity:.06;
+  [zoom>9] {
+    marker-width:4;
+    marker-opacity:.1;
+  }
+  [zoom>11] {
+    marker-width:7;
+    marker-opacity:.35;
+    text-name:"[Name]";
+    text-face-name:@sans;
+    text-fill: #FFF;
+    text-allow-overlap: true;
+    text-opacity: .5;
+    text-size: 13;
+    text-placement-type: simple;
+    text-placements: "S,E,W,N,NE,SE,NW,SW,16,14,12";
+    text-dy: 10;
+    text-dx: 10;
+  }
 }
 
 #maya-all-points {
