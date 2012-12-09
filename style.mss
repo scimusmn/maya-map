@@ -27,6 +27,9 @@ Map { background-color:@ocean; }
   polygon-gamma:0.3;
 }
 
+/**********************************************************
+ * Political boundaries
+ **********************************************************/
 #international_boundaries[zoom>1] {
   line-color:#555;
   line-dasharray:1,3;
@@ -64,6 +67,9 @@ Map { background-color:@ocean; }
   line-gamma:0.2;
 }
 
+/**********************************************************
+ * Modern population centers
+ **********************************************************/
 #urban {
   polygon-fill:#9933ff;
   polygon-opacity:.4;
@@ -76,12 +82,16 @@ Map { background-color:@ocean; }
   [zoom>6] { line-width:1.2; }
 }
 
+/**********************************************************
+ * Ancient Mayan archaeological sites
+ **********************************************************/
 .maya {
   marker-allow-overlap:true;
 
   /* Beeswax yellow */
   marker-fill:#ffcc66;
   marker-line-color:@landbg;
+
   /* Light tan */
   /*marker-fill:#CF7361;*/
   /*marker-line-color:#D28E4F;*/
