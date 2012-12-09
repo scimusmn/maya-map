@@ -28,7 +28,7 @@ Map { background-color:@ocean; }
 }
 
 #international_boundaries[zoom>1] {
-  line-color:#0AF;
+  line-color:#555;
   line-dasharray:1,3;
   line-width:0.5;
   line-opacity:0.5;
