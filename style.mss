@@ -162,6 +162,14 @@ Map { background-color:@ocean; }
 #maya-rank-03 {
   marker-width:2;
   marker-opacity:.06;
+  [zoom>7] {
+    marker-width:3;
+    marker-opacity:.1;
+  }
+  [zoom>8] {
+    marker-width:4;
+    marker-opacity:.15;
+  }
   [zoom>9] {
     marker-width:4;
     marker-opacity:.2;
