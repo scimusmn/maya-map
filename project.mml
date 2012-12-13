@@ -55,7 +55,8 @@
         -50.6696248183775,
         176.0938293028783,
         81.95527752537252
-      ]
+      ],
+      "status": "off"
     },
     {
       "id": "geo-lines",
@@ -85,7 +86,8 @@
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-land.zip"
       },
-      "geometry": "linestring"
+      "geometry": "linestring",
+      "status": "off"
     },
     {
       "id": "map-units",
@@ -93,7 +95,10 @@
       "srs": "",
       "class": "",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-map-units.zip"
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-map-units.zip",
+        "id": "map-units",
+        "project": "maya_map",
+        "srs": ""
       },
       "geometry": "polygon",
       "status": "off"
@@ -117,7 +122,8 @@
       "geometry": "point",
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip"
-      }
+      },
+      "status": "off"
     },
     {
       "id": "urban",
@@ -168,7 +174,7 @@
         -85.5624400427,
         21.60718
       ],
-      "id": "maya-rank-03",
+      "id": "maya-rank-03-old",
       "class": "maya",
       "Datasource": {
         "file": "./layers/maya_rank_03.kml",
@@ -179,7 +185,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "maya-rank-03"
+      "name": "maya-rank-03-old",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -189,7 +196,7 @@
         -87.42876666666666,
         21.445738405
       ],
-      "id": "maya-rank-02",
+      "id": "maya-rank-02-old",
       "class": "maya",
       "Datasource": {
         "file": "./layers/maya_rank_02.kml"
@@ -197,7 +204,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "maya-rank-02"
+      "name": "maya-rank-02-old",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -207,7 +215,7 @@
         -87.73307,
         20.970704367280007
       ],
-      "id": "maya-rank-01",
+      "id": "maya-rank-01-old",
       "class": "maya",
       "Datasource": {
         "file": "./layers/maya_rank_01.kml",
@@ -217,6 +225,88 @@
       },
       "srs-name": "autodetect",
       "srs": "",
+      "advanced": {},
+      "name": "maya-rank-01-old",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -93.20184,
+        14.632833329999999,
+        -87.73307,
+        20.97070436728
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( SELECT * from maya_rank_03) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-93.20184,14.63283333,-87.73307,20.97070436728",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy"
+      },
+      "id": "maya-rank-03",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-rank-03"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -93.20184,
+        14.632833329999999,
+        -87.73307,
+        20.97070436728
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( SELECT * from maya_rank_02) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-93.20184,14.63283333,-87.73307,20.97070436728",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy"
+      },
+      "id": "maya-rank-02",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-rank-02"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -93.20184,
+        14.632833329999999,
+        -87.73307,
+        20.97070436728
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( SELECT * from maya_rank_01) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "auto",
+        "extent": "-93.20184,14.63283333,-87.73307,20.97070436728",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy"
+      },
+      "id": "maya-rank-01",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "maya-rank-01"
     }
