@@ -24,7 +24,7 @@ Map { background-color:@ocean; }
 
 #land[zoom>=0] {
   polygon-fill: @landbg;
-  polygon-gamma:0.3;
+  polygon-gamma:0.0001;
 }
 
 /**********************************************************
