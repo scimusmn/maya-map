@@ -119,13 +119,23 @@ Map { background-color:@ocean; }
   text-allow-overlap: true;
   text-size: 12;
   text-placement-type: simple;
-  text-placements: "S,E,W,N,NE,SE,NW,SW,16,14,12";
+  text-placements: "NE,S,E,W,N,SE,NW,SW,16,14,12";
   text-dy: 10;
   text-dx: 10;
-  [zoom=7] { text-size:14; text-wrap-width:40; }
-  [zoom=8] { text-size:14; text-wrap-width:40; }
-  [zoom=9] { text-size:16; text-wrap-width:40; }
-  [zoom>9] { text-size:18; text-wrap-width:40; }
+  [zoom=7] { text-size:14; }
+  [zoom=8] { text-size:14; }
+  [zoom=9] { text-size:16; }
+  [zoom>9] { text-size:18; }
+
+  /* Custom label placements to prevent overlap */
+  [Name='El Mirador'] {
+    text-placements: "NE";
+    text-dx: 5;
+  }
+  [Name='Tikal'], [Name='Nakbe'], [Name='Comalcalco'] {
+    text-placements: "SE";
+    text-dx: 5;
+  }
 }
 
 #maya-rank-02 {
