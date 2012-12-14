@@ -115,9 +115,8 @@ Map { background-color:@ocean; }
 #maya-rank-01[zoom>5] {
   text-name:"[Name]";
   text-face-name:@sans;
-  text-fill: #FFF;
+  text-fill: #BBB;
   text-allow-overlap: true;
-  text-opacity: .5;
   text-size: 12;
   text-placement-type: simple;
   text-placements: "S,E,W,N,NE,SE,NW,SW,16,14,12";
