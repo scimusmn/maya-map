@@ -17,7 +17,8 @@
     "template_full": "",
     "fields": [
       "Name",
-      "Description"
+      "Description",
+      "gid"
     ]
   },
   "minzoom": 3,
@@ -39,6 +40,44 @@
       "geometry": "polygon"
     },
     {
+      "geometry": "linestring",
+      "extent": [
+        -164.90349121093752,
+        -52.15774505000591,
+        177.21118164062503,
+        75.79347565311913
+      ],
+      "id": "10mriverslakecenterl",
+      "class": "water",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-rivers-lake-centerlines-scale-ranks.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "10mriverslakecenterl",
+      "status": "off"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -166.31511230468752,
+        9.145135809369098,
+        -27.2623779296875,
+        82.63966705936913
+      ],
+      "id": "10mriversnorthameric",
+      "class": "water",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-rivers-north-america.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "10mriversnorthameric",
+      "status": "off"
+    },
+    {
       "id": "lakes",
       "name": "lakes",
       "srs": "",
@@ -55,8 +94,7 @@
         -50.6696248183775,
         176.0938293028783,
         81.95527752537252
-      ],
-      "status": "off"
+      ]
     },
     {
       "id": "geo-lines",
