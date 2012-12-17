@@ -10,7 +10,94 @@
 
 Map { background-color:@ocean; }
 .water-poly { polygon-fill:@ocean; }
-
+.water { 
+  line-color:#FF0000;
+}
+#10mriversnorthameric, #10mriverslakecenterl {
+  [zoom>1] {
+    line-width: .03;
+    line-opacity: .5;
+  }
+  [zoom>5] {
+    line-width: .1;
+  }
+  /* Biggest rivers
+   *
+   * Always show
+   */
+  [ScaleRank<5] {
+    text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
+    text-dy: 10;
+    text-fill: #BBB;
+    text-placement: line;
+    line-width: 1;
+    text-size: 12;
+    [zoom<5] { line-width: .5; }
+  }
+  /* Big rivers
+   *
+   * Always show
+   */
+  [ScaleRank=5] {
+    text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
+    text-dy: 10;
+    text-fill: #BBB;
+    text-placement: line;
+    line-width: 1;
+    text-size: 12;
+    [zoom<5] { line-width: .4; }
+  }
+  [ScaleRank=6] {
+    text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
+    text-dy: 10;
+    text-fill: #BBB;
+    text-placement: line;
+    line-width: .8;
+    text-size: 12;
+    [zoom<5] { line-width: .4; }
+  }
+  [ScaleRank=7] {
+    [zoom>4] {
+      text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
+      text-dy: 10;
+      text-fill: #BBB;
+      text-placement: line;
+      line-width: .8;
+      text-size: 12;
+    }
+    [zoom>6] {
+      line-width: 1.2;
+    }
+  }
+  [ScaleRank=8] {
+    [zoom>5] {
+      text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
+      text-dy: 10;
+      text-fill: #BBB;
+      text-placement: line;
+      line-width: .7;
+      text-size: 12;
+    }
+    [zoom>6] {
+      line-width: .9;
+    }
+  }
+  [ScaleRank>8] {
+    [zoom>6] {
+      text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
+      text-dy: 10;
+      text-fill: #BBB;
+      text-placement: line;
+      line-width: .8;
+      text-size: 12;
+    }
+  }
+  /*line-opacity:.2;*/
+  /*[zoom>6] {*/
+    /*line-width: .8;*/
+    /*line-opacity:.2;*/
+  /*}*/
+}
 /**********************************************************
  * Land base
  **********************************************************/
