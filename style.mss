@@ -24,7 +24,7 @@ Map { background-color:@ocean; }
 
 #land[zoom>=0] {
   polygon-fill: @landbg;
-  polygon-gamma:0.0001;
+  polygon-gamma:0.2;
 }
 
 /**********************************************************
@@ -209,4 +209,3 @@ Map { background-color:@ocean; }
   marker-allow-overlap:true;
   marker-opacity: .05;
 }
-
