@@ -296,3 +296,11 @@ Map { background-color:@ocean; }
   marker-allow-overlap:true;
   marker-opacity: .05;
 }
+
+
+#maya-all {
+  marker-width:6;
+  marker-fill:#f45;
+  marker-line-color:#813;
+  marker-allow-overlap:true;
+}
