@@ -12,7 +12,7 @@
   ],
   "format": "png",
   "interactivity": {
-    "layer": "maya-rank-01",
+    "layer": "",
     "template_teaser": "<strong>{{{Name}}}</strong><br />\n{{{Description}}}",
     "template_full": "",
     "fields": [
@@ -38,6 +38,25 @@
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-land.zip"
       },
       "geometry": "polygon"
+    },
+    {
+      "id": "lakes",
+      "name": "lakes",
+      "srs": "",
+      "class": "water-poly",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-lakes.zip",
+        "id": "lakes",
+        "project": "maya_map",
+        "srs": ""
+      },
+      "geometry": "polygon",
+      "extent": [
+        -165.96561893930925,
+        -50.6696248183775,
+        176.0938293028783,
+        81.95527752537252
+      ]
     },
     {
       "geometry": "linestring",
@@ -76,25 +95,6 @@
       "advanced": {},
       "name": "10mriversnorthameric",
       "status": "off"
-    },
-    {
-      "id": "lakes",
-      "name": "lakes",
-      "srs": "",
-      "class": "water-poly",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-lakes.zip",
-        "id": "lakes",
-        "project": "maya_map",
-        "srs": ""
-      },
-      "geometry": "polygon",
-      "extent": [
-        -165.96561893930925,
-        -50.6696248183775,
-        176.0938293028783,
-        81.95527752537252
-      ]
     },
     {
       "id": "geo-lines",
@@ -183,175 +183,6 @@
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip"
       },
       "geometry": "point",
-      "status": "off"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -96.4973025103,
-        13.1947365761,
-        -85.5624400427,
-        21.60718
-      ],
-      "id": "maya-all-points",
-      "class": "maya",
-      "Datasource": {
-        "file": "./layers/maya_rank_all.kml"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "maya-all-points",
-      "status": "off"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -96.4973025103,
-        13.1947365761,
-        -85.5624400427,
-        21.60718
-      ],
-      "id": "maya-rank-03-old",
-      "class": "maya",
-      "Datasource": {
-        "file": "./layers/maya_rank_03.kml",
-        "id": "maya-rank-03",
-        "project": "maya_map",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "maya-rank-03-old",
-      "status": "off"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -95.43124000000002,
-        13.88387,
-        -87.42876666666666,
-        21.445738405
-      ],
-      "id": "maya-rank-02-old",
-      "class": "maya",
-      "Datasource": {
-        "file": "./layers/maya_rank_02.kml"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "maya-rank-02-old",
-      "status": "off"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -93.20184,
-        14.632833329999999,
-        -87.73307,
-        20.970704367280007
-      ],
-      "id": "maya-rank-01-old",
-      "class": "maya",
-      "Datasource": {
-        "file": "./layers/maya_rank_01.kml",
-        "id": "maya-rank-01",
-        "project": "maya_map",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "maya-rank-01-old",
-      "status": "off"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -93.20184,
-        14.632833329999999,
-        -87.73307,
-        20.97070436728
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "( SELECT * from maya_rank_03) as sites",
-        "key_field": "gid",
-        "geometry_field": "the_geom",
-        "extent_cache": "auto",
-        "extent": "-93.20184,14.63283333,-87.73307,20.97070436728",
-        "dbname": "maya-sites",
-        "host": "localhost",
-        "port": "5432",
-        "user": "bkennedy"
-      },
-      "id": "maya-rank-03",
-      "class": "maya",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "maya-rank-03",
-      "status": "off"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -93.20184,
-        14.632833329999999,
-        -87.73307,
-        20.97070436728
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "( SELECT * from maya_rank_02) as sites",
-        "key_field": "gid",
-        "geometry_field": "the_geom",
-        "extent_cache": "auto",
-        "extent": "-93.20184,14.63283333,-87.73307,20.97070436728",
-        "dbname": "maya-sites",
-        "host": "localhost",
-        "port": "5432",
-        "user": "bkennedy"
-      },
-      "id": "maya-rank-02",
-      "class": "maya",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "maya-rank-02",
-      "status": "off"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -93.20184,
-        14.632833329999999,
-        -87.73307,
-        20.97070436728
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "( SELECT * from maya_rank_01) as sites",
-        "key_field": "gid",
-        "geometry_field": "the_geom",
-        "extent_cache": "auto",
-        "extent": "-93.20184,14.63283333,-87.73307,20.97070436728",
-        "dbname": "maya-sites",
-        "host": "localhost",
-        "port": "5432",
-        "user": "bkennedy",
-        "id": "maya-rank-01",
-        "project": "maya_map",
-        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
-      },
-      "id": "maya-rank-01",
-      "class": "maya",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "maya-rank-01",
       "status": "off"
     },
     {
