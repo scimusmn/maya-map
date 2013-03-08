@@ -73,8 +73,7 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "10mriverslakecenterl",
-      "status": "off"
+      "name": "10mriverslakecenterl"
     },
     {
       "geometry": "linestring",
@@ -123,8 +122,7 @@
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-land.zip"
       },
-      "geometry": "linestring",
-      "status": "off"
+      "geometry": "linestring"
     },
     {
       "id": "map-units",
@@ -137,8 +135,7 @@
         "project": "maya_map",
         "srs": ""
       },
-      "geometry": "polygon",
-      "status": "off"
+      "geometry": "polygon"
     },
     {
       "id": "subnational_boundaries",
@@ -159,8 +156,7 @@
       "geometry": "point",
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip"
-      },
-      "status": "off"
+      }
     },
     {
       "id": "urban",
@@ -179,7 +175,10 @@
       "srs": "",
       "class": "",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip"
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip",
+        "id": "cities",
+        "project": "maya_map",
+        "srs": ""
       },
       "geometry": "point",
       "status": "off"
