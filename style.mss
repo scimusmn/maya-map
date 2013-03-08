@@ -200,7 +200,7 @@ Map { background-color:@ocean; }
 #maya-rank-01[zoom>8] { marker-width:15; }
 
 #maya-rank-01[zoom>5] {
-  text-name:"[Name]";
+  text-name:"[name]";
   text-face-name:@sans;
   text-fill: #BBB;
   text-allow-overlap: true;
@@ -215,11 +215,11 @@ Map { background-color:@ocean; }
   [zoom>9] { text-size:18; }
 
   /* Custom label placements to prevent overlap */
-  [Name='El Mirador'] {
+  [name='El Mirador'] {
     text-placements: "NE";
     text-dx: 5;
   }
-  [Name='Tikal'], [Name='Nakbe'], [Name='Comalcalco'] {
+  [name='Tikal'], [name='Nakbe'], [name='Comalcalco'] {
     text-placements: "SE";
     text-dx: 5;
   }
@@ -234,7 +234,7 @@ Map { background-color:@ocean; }
   [zoom>8] {
     marker-width:9;
     marker-opacity:.2;
-    text-name:"[Name]";
+    text-name:"[name]";
     text-face-name:@sans;
     text-fill: #FFF;
     text-allow-overlap: true;
@@ -273,7 +273,7 @@ Map { background-color:@ocean; }
   [zoom>11] {
     marker-width:7;
     marker-opacity:.35;
-    text-name:"[Name]";
+    text-name:"[name]";
     text-face-name:@sans;
     text-fill: #FFF;
     text-allow-overlap: true;
@@ -286,7 +286,7 @@ Map { background-color:@ocean; }
   }
 }
 
-#maya-all-points {
+#maya-points {
   marker-width:1;
   marker-fill:#ffcc66;
   marker-line-color:#ffcc66;
@@ -298,7 +298,7 @@ Map { background-color:@ocean; }
 }
 
 
-#maya-all {
+#maya {
   marker-width:6;
   marker-fill:#f45;
   marker-line-color:#813;
