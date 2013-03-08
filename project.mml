@@ -292,7 +292,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-03"
+      "name": "maya-rank-03",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -319,7 +320,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-02"
+      "name": "maya-rank-02",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -349,7 +351,38 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-01"
+      "name": "maya-rank-01",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "maya-all",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "maya-all",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-all"
     }
   ],
   "scale": 1,
