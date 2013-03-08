@@ -257,68 +257,8 @@ Map { background-color:@ocean; }
   }
 }
 
-#maya-rank-03 {
-  marker-width:2;
-  marker-opacity:.06;
-  [zoom>7] {
-    marker-width:3;
-    marker-opacity:.1;
-  }
-  [zoom>8] {
-    marker-width:4;
-    marker-opacity:.15;
-  }
-  [zoom>9] {
-    marker-width:4;
-    marker-opacity:.2;
-  }
-  [zoom>11] {
-    marker-width:7;
-    marker-opacity:.35;
-    text-name:"[name]";
-    text-face-name:@sans;
-    text-fill: #FFF;
-    text-allow-overlap: true;
-    text-opacity: .5;
-    text-size: 13;
-    text-placement-type: simple;
-    text-placements: "S,E,W,N,NE,SE,NW,SW,16,14,12";
-    text-dy: 10;
-    text-dx: 10;
-  }
-}
-
-#maya-rank-04 {
-  marker-width:2;
-  marker-opacity:.06;
-  [zoom>7] {
-    marker-width:3;
-    marker-opacity:.1;
-  }
-  [zoom>8] {
-    marker-width:4;
-    marker-opacity:.15;
-  }
-  [zoom>9] {
-    marker-width:4;
-    marker-opacity:.2;
-  }
-  [zoom>11] {
-    marker-width:7;
-    marker-opacity:.35;
-    text-name:"[name]";
-    text-face-name:@sans;
-    text-fill: #FFF;
-    text-allow-overlap: true;
-    text-opacity: .5;
-    text-size: 13;
-    text-placement-type: simple;
-    text-placements: "S,E,W,N,NE,SE,NW,SW,16,14,12";
-    text-dy: 10;
-    text-dx: 10;
-  }
-}
-
+#maya-rank-03,
+#maya-rank-04,
 #maya-rank-05 {
   marker-width:2;
   marker-opacity:.06;
@@ -348,23 +288,4 @@ Map { background-color:@ocean; }
     text-dy: 10;
     text-dx: 10;
   }
-}
-
-#maya-points {
-  marker-width:1;
-  marker-fill:#ffcc66;
-  marker-line-color:#ffcc66;
-  [zoom=7],[zoom=8] {
-    marker-line-color:#ffcc66;
-  }
-  marker-allow-overlap:true;
-  marker-opacity: .05;
-}
-
-
-#maya {
-  marker-width:6;
-  marker-fill:#f45;
-  marker-line-color:#813;
-  marker-allow-overlap:true;
 }
