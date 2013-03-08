@@ -194,36 +194,6 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT * from maya_rank_all WHERE rank=1) as sites",
-        "key_field": "gid",
-        "geometry_field": "the_geom",
-        "extent_cache": "dynamic",
-        "extent": "",
-        "dbname": "maya-sites",
-        "host": "localhost",
-        "port": "5432",
-        "user": "bkennedy",
-        "id": "maya-rank-01",
-        "project": "maya_map",
-        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
-      },
-      "id": "maya-rank-01",
-      "class": "maya",
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "maya-rank-01"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -96.49730251000001,
-        13.194736580000002,
-        -85.56244004,
-        21.60718
-      ],
-      "Datasource": {
-        "type": "postgis",
         "table": "(SELECT * from maya_rank_all WHERE rank=2) as sites",
         "key_field": "gid",
         "geometry_field": "the_geom",
@@ -243,6 +213,36 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "maya-rank-02"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE rank=1) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "maya-rank-01",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "maya-rank-01",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-rank-01"
     },
     {
       "geometry": "point",
