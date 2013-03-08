@@ -65,15 +65,15 @@
         177.21118164062503,
         75.79347565311913
       ],
-      "id": "10mriverslakecenterl",
-      "class": "water",
+      "id": "rivers-ca",
+      "class": "water-lines",
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-rivers-lake-centerlines-scale-ranks.zip"
       },
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "10mriverslakecenterl"
+      "name": "rivers-ca"
     },
     {
       "geometry": "linestring",
@@ -83,15 +83,15 @@
         -27.2623779296875,
         82.63966705936913
       ],
-      "id": "10mriversnorthameric",
-      "class": "water",
+      "id": "rivers-na",
+      "class": "water-lines",
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-rivers-north-america.zip"
       },
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "10mriversnorthameric",
+      "name": "rivers-na",
       "status": "off"
     },
     {
@@ -115,40 +115,6 @@
       "status": "off"
     },
     {
-      "id": "international_boundaries",
-      "name": "international_boundaries",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-land.zip"
-      },
-      "geometry": "linestring"
-    },
-    {
-      "id": "map-units",
-      "name": "map-units",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-map-units.zip",
-        "id": "map-units",
-        "project": "maya_map",
-        "srs": ""
-      },
-      "geometry": "polygon"
-    },
-    {
-      "id": "subnational_boundaries",
-      "name": "subnational_boundaries",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-1-states-provinces-lines.zip"
-      },
-      "geometry": "linestring",
-      "status": "off"
-    },
-    {
       "id": "country-labels",
       "name": "country-labels",
       "srs": "",
@@ -159,15 +125,88 @@
       }
     },
     {
-      "id": "urban",
-      "name": "urban",
+      "id": "country-boundaries",
+      "name": "country-boundaries",
       "srs": "",
       "class": "",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-urban-areas.zip"
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-land.zip",
+        "id": "international_boundaries",
+        "project": "maya_map",
+        "srs": ""
+      },
+      "geometry": "linestring",
+      "extent": [
+        -141.00554866607175,
+        -55.12092376716174,
+        140.977626994236,
+        70.07531036419849
+      ],
+      "srs-name": "autodetect",
+      "advanced": {}
+    },
+    {
+      "id": "country-outlines",
+      "name": "country-outlines",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-map-units.zip",
+        "id": "map-units",
+        "project": "maya_map",
+        "srs": ""
       },
       "geometry": "polygon",
+      "extent": [
+        -179.99978348919961,
+        -85.051,
+        180,
+        83.63381093402975
+      ],
+      "srs-name": "autodetect",
+      "advanced": {},
       "status": "off"
+    },
+    {
+      "id": "subcountry-boundaries",
+      "name": "subcountry-boundaries",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-1-states-provinces-lines.zip"
+      },
+      "geometry": "linestring",
+      "extent": [
+        -139.04719194227846,
+        -49.25074024841062,
+        178.44862226797608,
+        81.13822602001463
+      ],
+      "srs-name": "autodetect",
+      "advanced": {},
+      "status": "off"
+    },
+    {
+      "id": "urban-areas",
+      "name": "urban-areas",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-urban-areas.zip",
+        "id": "urban",
+        "project": "maya_map",
+        "srs": ""
+      },
+      "geometry": "polygon",
+      "status": "off",
+      "extent": [
+        -157.98071326396882,
+        -51.05295582458972,
+        178.03340213451082,
+        69.76979848904467
+      ],
+      "srs-name": "autodetect",
+      "advanced": {}
     },
     {
       "id": "cities",

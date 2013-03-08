@@ -117,10 +117,15 @@ Map { background-color:@ocean; }
 /**********************************************************
  * Political boundaries
  **********************************************************/
-#international_boundaries[zoom>1] {
-  line-color:#555;
+#country-boundaries[zoom>1],
+#country-outlines[zoom>1],
+#subcountry-boundaries[zoom>4] {
+  line-color:#8f8f8f;
+}
+#country-boundaries[zoom>1],
+#country-outlines[zoom>1]{
   line-dasharray:1,3;
-  line-width:0.5;
+  line-width:1.5;
   line-opacity:0.5;
   [zoom=4] { line-width:0.6; }
   [zoom=5] { line-width:0.8; }
@@ -129,13 +134,10 @@ Map { background-color:@ocean; }
   [zoom=8] { line-width:1.4; }
   [zoom>8] { line-width:1.6; }
 }
-
-#subnational_boundaries[COUNTRYNAM='US'][zoom=4],
-#subnational_boundaries[COUNTRYNAM='Canada'][zoom=4],
-#subnational_boundaries[COUNTRYNAM='Australia'][zoom=4],
-#map-units[zoom>4],
-#subnational_boundaries[zoom>4] {
-  line-color:#0AF;
+#subcountry-boundaries[COUNTRYNAM='US'][zoom=4],
+#subcountry-boundaries[COUNTRYNAM='Canada'][zoom=4],
+#subcountry-boundaries[COUNTRYNAM='Australia'][zoom=4],
+#subcountry-boundaries[zoom>4] {
   line-dasharray:4,2;
   line-opacity:0.2;
   line-width:0.4;
