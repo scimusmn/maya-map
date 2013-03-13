@@ -11,7 +11,7 @@
 Map { background-color:@ocean; }
 .water-poly { polygon-fill:@ocean; }
 .water { 
-  line-color:#FF0000;
+  line-color:#661c1c;
 }
 #10mriversnorthameric, #10mriverslakecenterl {
   [zoom>1] {
@@ -288,4 +288,10 @@ Map { background-color:@ocean; }
     text-dy: 10;
     text-dx: 10;
   }
+}
+.maya-graphic {
+  marker-allow-overlap:true;
+  marker-fill:#ffcc66;
+  marker-line-color:#ffcc66;
+  marker-width: 1;
 }
