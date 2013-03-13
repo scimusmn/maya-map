@@ -179,7 +179,7 @@ Map { background-color:@ocean; }
 
   /* Beeswax yellow */
   marker-fill:#ffcc66;
-  marker-line-color:@landbg;
+  marker-line-color:#ffcc66;
 
   /* Light tan */
   /*marker-fill:#CF7361;*/
@@ -197,12 +197,12 @@ Map { background-color:@ocean; }
 #maya-rank-01[zoom=4] { marker-line-color:#ffcc66; marker-width:3; }
 #maya-rank-01[zoom=5] { marker-line-color:#ffcc66; marker-width:4; }
 #maya-rank-01[zoom=6] { marker-width:10; }
-#maya-rank-01[zoom=7] { marker-width:11; }
+#maya-rank-01[zoom=7] { marker-width:13; }
 #maya-rank-01[zoom=8] { marker-width:13; }
 #maya-rank-01[zoom>8] { marker-width:15; }
 
 #maya-rank-01[zoom>5] {
-  text-name:"[name]";
+  /*text-name:"[name]";
   text-face-name:@sans;
   text-fill: #BBB;
   text-allow-overlap: true;
@@ -214,28 +214,29 @@ Map { background-color:@ocean; }
   [zoom=7] { text-size:14; }
   [zoom=8] { text-size:14; }
   [zoom=9] { text-size:16; }
-  [zoom>9] { text-size:18; }
+  [zoom>9] { text-size:18; }*/
 
   /* Custom label placements to prevent overlap */
-  [name='El Mirador'] {
+  /*[name='El Mirador'] {
     text-placements: "NE";
     text-dx: 5;
   }
   [name='Tikal'], [name='Nakbe'], [name='Comalcalco'] {
     text-placements: "SE";
     text-dx: 5;
-  }
+  }*/
 }
 
 #maya-rank-02 {
   marker-width:0;
-  [zoom>3] { marker-width:3; marker-opacity:.03; }
-  [zoom>5] { marker-width:4; marker-opacity:.05; }
-  [zoom>6] { marker-width:6; marker-opacity:.1; }
-  [zoom>7] { marker-width:8; marker-opacity:.15; }
+  [zoom>3] { marker-width:3; marker-opacity:.03; marker-line-opacity:.03;}
+  [zoom>5] { marker-width:4; marker-opacity:.05; marker-line-opacity:.05;}
+  [zoom>6] { marker-width:8; marker-opacity:.6; marker-line-opacity:.6;}
+  [zoom>7] { marker-width:8; marker-opacity:.15; marker-line-opacity:.15 }
   [zoom>8] {
     marker-width:9;
     marker-opacity:.2;
+    marker-line-opacity:.2;
     text-name:"[name]";
     text-face-name:@sans;
     text-fill: #FFF;
@@ -250,33 +251,110 @@ Map { background-color:@ocean; }
   [zoom>9] {
     marker-width:10;
     marker-opacity:.3;
+    marker-line-opacity:.3;
   }
   [zoom>11] {
     marker-width:14;
     marker-opacity:.3;
+    marker-line-opacity:.3;
   }
 }
 
-#maya-rank-03,
-#maya-rank-04,
-#maya-rank-05 {
-  marker-width:2;
-  marker-opacity:.06;
+#maya-rank-03 {
+  marker-width:3;
+  marker-opacity:.4;
+  marker-line-opacity:.4;
   [zoom>7] {
     marker-width:3;
     marker-opacity:.1;
+    marker-line-opacity:.1;
   }
   [zoom>8] {
     marker-width:4;
     marker-opacity:.15;
+    marker-line-opacity:.15;
   }
   [zoom>9] {
     marker-width:4;
     marker-opacity:.2;
+    marker-line-opacity:.2;
   }
   [zoom>11] {
     marker-width:7;
     marker-opacity:.35;
+    marker-line-opacity:.35;
+    text-name:"[name]";
+    text-face-name:@sans;
+    text-fill: #FFF;
+    text-allow-overlap: true;
+    text-opacity: .5;
+    text-size: 13;
+    text-placement-type: simple;
+    text-placements: "S,E,W,N,NE,SE,NW,SW,16,14,12";
+    text-dy: 10;
+    text-dx: 10;
+  }
+}
+
+#maya-rank-04 {
+  marker-width:2;
+  marker-opacity:.3;
+  marker-line-opacity:.3;
+  [zoom>7] {
+    marker-width:3;
+    marker-opacity:.1;
+    marker-line-opacity:.1;
+  }
+  [zoom>8] {
+    marker-width:4;
+    marker-opacity:.15;
+    marker-line-opacity:.15;
+  }
+  [zoom>9] {
+    marker-width:4;
+    marker-opacity:.2;
+    marker-line-opacity:.2;
+  }
+  [zoom>11] {
+    marker-width:7;
+    marker-opacity:.35;
+    marker-line-opacity:.35;
+    text-name:"[name]";
+    text-face-name:@sans;
+    text-fill: #FFF;
+    text-allow-overlap: true;
+    text-opacity: .5;
+    text-size: 13;
+    text-placement-type: simple;
+    text-placements: "S,E,W,N,NE,SE,NW,SW,16,14,12";
+    text-dy: 10;
+    text-dx: 10;
+  }
+}
+
+#maya-rank-05 {
+  marker-width:2;
+  marker-opacity:.1;
+  marker-line-opacity:.1;
+  [zoom>7] {
+    marker-width:3;
+    marker-opacity:.1;
+    marker-line-opacity:.1;
+  }
+  [zoom>8] {
+    marker-width:4;
+    marker-opacity:.15;
+    marker-line-opacity:.15;
+  }
+  [zoom>9] {
+    marker-width:4;
+    marker-opacity:.2;
+    marker-line-opacity:.2;
+  }
+  [zoom>11] {
+    marker-width:7;
+    marker-opacity:.35;
+    marker-line-opacity:.35;
     text-name:"[name]";
     text-face-name:@sans;
     text-fill: #FFF;
