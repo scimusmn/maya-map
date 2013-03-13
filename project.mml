@@ -122,7 +122,8 @@
       "geometry": "point",
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip"
-      }
+      },
+      "status": "off"
     },
     {
       "id": "country-boundaries",
@@ -143,7 +144,8 @@
         70.07531036419849
       ],
       "srs-name": "autodetect",
-      "advanced": {}
+      "advanced": {},
+      "status": "off"
     },
     {
       "id": "country-outlines",
@@ -223,6 +225,174 @@
       "status": "off"
     },
     {
+      "id": "cities",
+      "name": "cities",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip",
+        "id": "cities",
+        "project": "maya_map",
+        "srs": ""
+      },
+      "geometry": "point",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE name IN ('Santa Rita') AND country = 'Belize') as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "maya-0208-alt",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "maya-0208-02",
+      "class": "maya-graphic",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-0208-02",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE name IN ('Chamula')) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "maya-0208-01",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "maya-0208-01",
+      "class": "maya-graphic",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-0208-01",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE name IN ('Copan', 'Quirigua', 'Aguateca', 'Bonampak', 'Dos Pilas', 'El Cayo', 'La Mar', 'Lacanha', 'Palenque', 'Piedras Negras', 'Tonina', 'Yaxchilan', 'Caracol', 'Lubaantun', 'Santa Rita', 'Caracol', 'Hokeb Ha') OR name in (SELECT name from maya_rank_all WHERE name = 'Xunantunich' AND maya_rank_all.country='Belize')) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "maya-0208",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "maya-0208",
+      "class": "maya-graphic",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-0208",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE classic > 0 AND rank = 1) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "maya-classic-rank-01",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "maya-classic-rank-01",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-classic-rank-01"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE classic > 0) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "maya-classic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "maya-classic",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-classic",
+      "status": "off"
+    },
+    {
       "geometry": "point",
       "extent": [
         -96.49730251000001,
@@ -250,7 +420,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-05"
+      "name": "maya-rank-05",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -280,7 +451,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-04"
+      "name": "maya-rank-04",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -310,7 +482,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-03"
+      "name": "maya-rank-03",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -340,7 +513,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-02"
+      "name": "maya-rank-02",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -370,7 +544,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-01"
+      "name": "maya-rank-01",
+      "status": "off"
     },
     {
       "geometry": "point",
