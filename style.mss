@@ -202,7 +202,7 @@ Map { background-color:@ocean; }
 #maya-rank-01[zoom>8] { marker-width:15; }
 
 #maya-rank-01[zoom>5] {
-  /*text-name:"[name]";
+  text-name:"[name]";
   text-face-name:@sans;
   text-fill: #BBB;
   text-allow-overlap: true;
@@ -214,7 +214,7 @@ Map { background-color:@ocean; }
   [zoom=7] { text-size:14; }
   [zoom=8] { text-size:14; }
   [zoom=9] { text-size:16; }
-  [zoom>9] { text-size:18; }*/
+  [zoom>9] { text-size:18; }
 
   /* Custom label placements to prevent overlap */
   /*[name='El Mirador'] {
