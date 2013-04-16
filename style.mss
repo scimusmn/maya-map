@@ -231,7 +231,7 @@ Map { background-color:@ocean; }
   marker-width:0;
   [zoom>3] { marker-width:3; marker-opacity:.03; marker-line-opacity:.03;}
   [zoom>5] { marker-width:4; marker-opacity:.05; marker-line-opacity:.05;}
-  [zoom>6] { marker-width:8; marker-opacity:.6; marker-line-opacity:.6;}
+  [zoom>6] { marker-width:8; marker-opacity:.3; marker-line-opacity:.3;}
   [zoom>7] { marker-width:8; marker-opacity:.15; marker-line-opacity:.15 }
   [zoom>8] {
     marker-width:9;
@@ -262,8 +262,8 @@ Map { background-color:@ocean; }
 
 #maya-rank-03 {
   marker-width:3;
-  marker-opacity:.4;
-  marker-line-opacity:.4;
+  marker-opacity:.2;
+  marker-line-opacity:.2;
   [zoom>7] {
     marker-width:3;
     marker-opacity:.1;
@@ -298,8 +298,8 @@ Map { background-color:@ocean; }
 
 #maya-rank-04 {
   marker-width:2;
-  marker-opacity:.3;
-  marker-line-opacity:.3;
+  marker-opacity:.15;
+  marker-line-opacity:.15;
   [zoom>7] {
     marker-width:3;
     marker-opacity:.1;
