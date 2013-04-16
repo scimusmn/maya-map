@@ -91,8 +91,7 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "rivers-na",
-      "status": "off"
+      "name": "rivers-na"
     },
     {
       "id": "geo-lines",
@@ -122,8 +121,7 @@
       "geometry": "point",
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip"
-      },
-      "status": "off"
+      }
     },
     {
       "id": "country-boundaries",
@@ -144,8 +142,7 @@
         70.07531036419849
       ],
       "srs-name": "autodetect",
-      "advanced": {},
-      "status": "off"
+      "advanced": {}
     },
     {
       "id": "country-outlines",
@@ -185,8 +182,7 @@
         81.13822602001463
       ],
       "srs-name": "autodetect",
-      "advanced": {},
-      "status": "off"
+      "advanced": {}
     },
     {
       "id": "urban-areas",
@@ -200,7 +196,6 @@
         "srs": ""
       },
       "geometry": "polygon",
-      "status": "off",
       "extent": [
         -157.98071326396882,
         -51.05295582458972,
@@ -208,7 +203,8 @@
         69.76979848904467
       ],
       "srs-name": "autodetect",
-      "advanced": {}
+      "advanced": {},
+      "status": "off"
     },
     {
       "id": "cities",
