@@ -121,7 +121,8 @@
       "geometry": "point",
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip"
-      }
+      },
+      "status": "off"
     },
     {
       "id": "country-boundaries",
@@ -142,7 +143,8 @@
         70.07531036419849
       ],
       "srs-name": "autodetect",
-      "advanced": {}
+      "advanced": {},
+      "status": "off"
     },
     {
       "id": "country-outlines",
@@ -182,7 +184,8 @@
         81.13822602001463
       ],
       "srs-name": "autodetect",
-      "advanced": {}
+      "advanced": {},
+      "status": "off"
     },
     {
       "id": "urban-areas",
@@ -264,6 +267,36 @@
       "advanced": {},
       "name": "maya-0208-02",
       "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE name IN ('Edzna', 'Ek Balam') AND rank=2) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "maya-custom-graphic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "maya-custom-graphic",
+      "class": "maya-graphic",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "maya-custom-graphic"
     },
     {
       "geometry": "point",
@@ -541,7 +574,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-05"
+      "name": "maya-rank-05",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -571,7 +605,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-04"
+      "name": "maya-rank-04",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -601,7 +636,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-03"
+      "name": "maya-rank-03",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -631,7 +667,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-02"
+      "name": "maya-rank-02",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -661,7 +698,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-01"
+      "name": "maya-rank-01",
+      "status": "off"
     },
     {
       "geometry": "point",
