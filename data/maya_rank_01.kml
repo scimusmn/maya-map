@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Maya Ruins, Ruinas Maya</name>
+	<snippet>Rank 1, Rank 2, and smaller archaeological sites of the Maya region
+	</snippet>
+	<description>
+
+	<![CDATA[
+	Rank 1  (very large) and Rank 2 (large) and Rank 3-5 (small to very small) archaeological sites in and near the Maya region of eastern Mexico, Guatemala, Belize, Honduras, and El Salvador. 
+<br/><br/>Extracted from the more than 6,000 archaeological sites in the database of the Electronic Atlas of Ancient Maya Sites. 
+<br/><br/>2010 copyright Walter R. T. Witschey, Longwood University, and Clifford T Brown, Florida Atlantic University
+<br/><br/>Report errors/changes: WitscheyWR@Longwood.edu
+<br/><br/>Visit web site http://MayaGIS.smv.org
+<br/><br/>See website for full bibliography.
+<br/>
+<br/>Sitios arqueologicos de rango 1 (muy grande) y de rango 2 (grande) y de rango 3 a 5 (los mas pequenos) en y cerca de la region maya del este de Mexico, Guatemala, Belice, Honduras y El Salvador. 
+<br/><br/>Extraido de las mas de 6.000 sitios arqueologicos en la base de datos del Atlas Electronico de los Sitios Antiguos Mayas.
+<br/><br/>Informe de errores y cambios a: WitscheyWR@Longwood.edu
+<br/><br/>Visite el sitio web http://MayaGIS.smv.org
+<br/><br/>Vease el sitio web de la bibliografia completa.
+<br/><br/>8 FEB 2010
+	
+	]]>
+	</description>
+<Style>
+	<BalloonStyle>
+		<text><![CDATA[<b>$[name]</b><br/>$[description]]]></text>
+	</BalloonStyle>
+		
+                
+	</Style>
+<atom:author>             
+      <atom:name>Walter R T Witschey</atom:name>         
+    </atom:author>         
+<atom:author>             
+      <atom:name>Clifford T Brown</atom:name>         
+    </atom:author>         
+<atom:link href="http://MayaGIS.smv.org" />
+
+	<open>1</open>
+
+<Folder id="Rank 1 Sites">
+
+	<name>Rank 1 sites, Sitios de rango 1</name>
+	<description>
+	<![CDATA[
+Large structures at most rank 1 sites are clearly visible in imagery 
+<br/><br/>Las estructuras de gran tamano en la mayoria de los sitios de rango 1 son claramente visibles en las imagenes
+	]]>
+	</description>
+	<Style id="Rank1Icon">
+
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href> http://MayaGIS.SMV.org/Lg-pyr-4 gray.png </href>
+			</Icon>
+			<!--
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+			-->
+		</IconStyle>
+
+		<ListStyle>
+			<scale>1.0</scale>
+			<ItemIcon>
+				<href> http://MayaGIS.SMV.org/Lg-pyr-4 gray.png </href>
+			</ItemIcon>
+		</ListStyle>
+
+		 
+		<BalloonStyle>
+			<text><![CDATA[<b>$[name]</b><br/>$[description]]]></text>
+		</BalloonStyle>
+		
+                
+	</Style>
+
+<!-- INSERT RANK 1 MERGE BELOW HERE -->
+
+
+<Placemark id="Calakmul">
+
+	<name><![CDATA[Calakmul]]> </name>
+	<description>
+       <![CDATA[
+      Champoton, Campeche, Mexico  (Rank 1)
+      <br/>
+      <br/>Ref. Mayer 2006]]>
+	</description>
+
+<LookAt>
+    <longitude>-89.810333330000006</longitude>
+    <latitude>18.104500000000002</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-89.810333330000006,18.104500000000002,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Caracol">
+
+	<name><![CDATA[Caracol]]> </name>
+	<description>
+       <![CDATA[
+      , Cayo, Belize  (Rank 1)
+      <br/>
+      <br/>Ref. Witschey 2009]]>
+	</description>
+
+<LookAt>
+    <longitude>-89.117599999999996</longitude>
+    <latitude>16.763950000000001</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-89.117599999999996,16.763950000000001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Chichen Itza">
+
+	<name><![CDATA[Chichen Itza]]> </name>
+	<description>
+       <![CDATA[
+      Tinum, Yucatan, Mexico  (Rank 1)
+      <br/>
+      <br/>Ref. Witschey 2009]]>
+	</description>
+
+<LookAt>
+    <longitude>-88.568600000000004</longitude>
+    <latitude>20.682870000000001</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-88.568600000000004,20.682870000000001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Coba">
+
+	<name><![CDATA[Coba]]> </name>
+	<description>
+       <![CDATA[
+      Solidaridad, Quintana Roo, Mexico  (Rank 1)
+      <br/>
+      <br/>Ref. Witschey 2001]]>
+	</description>
+
+<LookAt>
+    <longitude>-87.733069999999998</longitude>
+    <latitude>20.491040000000002</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-87.733069999999998,20.491040000000002,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Comalcalco">
+
+	<name><![CDATA[Comalcalco]]> </name>
+	<description>
+       <![CDATA[
+      Comalcalco, Tabasco, Mexico  (Rank 1)
+      <br/>
+      <br/>Ref. Witschey 2009]]>
+	</description>
+
+<LookAt>
+    <longitude>-93.201840000000004</longitude>
+    <latitude>18.280069999999998</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-93.201840000000004,18.280069999999998,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Copan">
+
+	<name><![CDATA[Copan]]> </name>
+	<description>
+       <![CDATA[
+      Copan Ruinas, Copan, Honduras  (Rank 1)
+      <br/>
+      <br/>Ref. Witschey 2009]]>
+	</description>
+
+<LookAt>
+    <longitude>-89.138850000000005</longitude>
+    <latitude>14.84107</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-89.138850000000005,14.84107,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="El Mirador">
+
+	<name><![CDATA[El Mirador]]> </name>
+	<description>
+       <![CDATA[
+      San Andres, Peten, Guatemala  (Rank 1)
+      <br/>
+      <br/>Ref. Witschey 2009]]>
+	</description>
+
+<LookAt>
+    <longitude>-89.923069999999996</longitude>
+    <latitude>17.754819999999999</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-89.923069999999996,17.754819999999999,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Izamal">
+
+	<name><![CDATA[Izamal]]> </name>
+	<description>
+       <![CDATA[
+      Izamal, Yucatan, Mexico  (Rank 1)
+      <br/>
+      <br/>Ref. Covarrubias,  Villanueva 2008]]>
+	</description>
+
+<LookAt>
+    <longitude>-89.017109170500007</longitude>
+    <latitude>20.937062729699999</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-89.017109170500007,20.937062729699999,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Kaminaljuyu">
+
+	<name><![CDATA[Kaminaljuyu]]> </name>
+	<description>
+       <![CDATA[
+      Guatemala, Guatemala, Guatemala  (Rank 1)
+      <br/>
+      <br/>Ref. Mayer 2006]]>
+	</description>
+
+<LookAt>
+    <longitude>-90.549000000000007</longitude>
+    <latitude>14.63283333</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-90.549000000000007,14.63283333,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Nakbe">
+
+	<name><![CDATA[Nakbe]]> </name>
+	<description>
+       <![CDATA[
+      San Jose, Peten, Guatemala  (Rank 1)
+      <br/>
+      <br/>Ref. 1991,IGM, IAH GT Map]]>
+	</description>
+
+<LookAt>
+    <longitude>-89.837779999999995</longitude>
+    <latitude>17.672689999999999</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-89.837779999999995,17.672689999999999,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Palenque">
+
+	<name><![CDATA[Palenque]]> </name>
+	<description>
+       <![CDATA[
+      Palenque, Chiapas, Mexico  (Rank 1)
+      <br/>
+      <br/>Ref. Mayer 2006]]>
+	</description>
+
+<LookAt>
+    <longitude>-92.045833329999994</longitude>
+    <latitude>17.484000000000002</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-92.045833329999994,17.484000000000002,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Piedras Negras">
+
+	<name><![CDATA[Piedras Negras]]> </name>
+	<description>
+       <![CDATA[
+      La Libertad, Peten, Guatemala  (Rank 1)
+      <br/>
+      <br/>Ref. Witschey 2009]]>
+	</description>
+
+<LookAt>
+    <longitude>-91.262979999999999</longitude>
+    <latitude>17.166409999999999</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-91.262979999999999,17.166409999999999,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Tiho">
+
+	<name><![CDATA[Tiho]]> </name>
+	<description>
+       <![CDATA[
+      Merida, Yucatan, Mexico  (Rank 1)
+      <br/>
+      <br/>Ref. Garza and Kurjack 1980]]>
+	</description>
+
+<LookAt>
+    <longitude>-89.620750185100491</longitude>
+    <latitude>20.970704367280007</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-89.620750185100491,20.970704367280007,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Tikal">
+
+	<name><![CDATA[Tikal]]> </name>
+	<description>
+       <![CDATA[
+      Flores, Peten, Guatemala  (Rank 1)
+      <br/>
+      <br/>Ref. 1991,IGM, IAH GT Map]]>
+	</description>
+
+<LookAt>
+    <longitude>-89.631630000000001</longitude>
+    <latitude>17.217320000000001</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-89.631630000000001,17.217320000000001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Uxmal">
+
+	<name><![CDATA[Uxmal]]> </name>
+	<description>
+       <![CDATA[
+      Santa Elena, Yucatan, Mexico  (Rank 1)
+      <br/>
+      <br/>Ref. Witschey 2009]]>
+	</description>
+
+<LookAt>
+    <longitude>-89.770660000000007</longitude>
+    <latitude>20.360309999999998</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-89.770660000000007,20.360309999999998,0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="Yaxchilan">
+
+	<name><![CDATA[Yaxchilan]]> </name>
+	<description>
+       <![CDATA[
+      Ocosingo, Chiapas, Mexico  (Rank 1)
+      <br/>
+      <br/>Ref. Mayer 2006]]>
+	</description>
+
+<LookAt>
+    <longitude>-90.967500000000001</longitude>
+    <latitude>16.896166669999999</latitude>
+    <range>3000</range>
+</LookAt>	
+
+<styleUrl>#Rank1Icon</styleUrl>
+
+<Point>
+		<coordinates>-90.967500000000001,16.896166669999999,0</coordinates>
+</Point>
+</Placemark>
+
+</Folder> <!-- end folder rank 1 --> 
+</Document>
+</kml>
