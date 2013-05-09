@@ -45,7 +45,7 @@ Map { background-color:@ocean; }
     text-placement: line;
     line-width: 1;
     text-size: 12;
-    [zoom<5] { line-width: .4; }
+    [zoom<5] { line-width: .5; }
   }
   [ScaleRank=6] {
     text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
@@ -178,15 +178,15 @@ Map { background-color:@ocean; }
   marker-allow-overlap:true;
 
   /* Beeswax yellow */
-  marker-fill:#ffcc66;
-  marker-line-color:#ffcc66;
+  /*marker-fill:#ffcc66;*/
+  /*marker-line-color:#ffcc66;*/
 
   /* Light tan */
   /*marker-fill:#CF7361;*/
   /*marker-line-color:#D28E4F;*/
 
   /* Mayan cinabar */
-  /*marker-fill:#771823;*/
+  marker-fill:#771823;
 
   /* Control room default */
   /*marker-line-color:#938562;*/
@@ -198,7 +198,7 @@ Map { background-color:@ocean; }
 #maya-rank-01[zoom=5] { marker-line-color:#ffcc66; marker-width:4; }
 #maya-rank-01[zoom=6] { marker-width:10; }
 #maya-rank-01[zoom=7] { marker-width:13; }
-#maya-rank-01[zoom=8] { marker-width:13; }
+#maya-rank-01[zoom=8] { marker-width:30; }
 #maya-rank-01[zoom>8] { marker-width:15; }
 
 #maya-rank-01[zoom>5] {
@@ -368,8 +368,17 @@ Map { background-color:@ocean; }
   }
 }
 .maya-graphic {
+  text-name:"[name]";
+  text-face-name:@sans;
+  text-fill: #BBB;
+  text-allow-overlap: true;
+  text-size: 12;
+  text-placement-type: simple;
+  text-placements: "NE,S,E,W,N,SE,NW,SW,16,14,12";
+  text-dy: 10;
+  text-dx: 10;
   marker-allow-overlap:true;
   marker-fill:#ffcc66;
   marker-line-color:#ffcc66;
-  marker-width: 1;
+  marker-width: 5;
 }
