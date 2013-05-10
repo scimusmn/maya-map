@@ -1,7 +1,7 @@
 # Data notes
 
 ## KML
-The KML (Google Earth, Keyhole Markup Language) files here are the original data from [Brown and Witschey](http://mayagis.smv.org/google_earth_data.htm)
+The KML (Google Earth, Keyhole Markup Language) files are a copy of the original data from [Drs. Brown and Witschey's public Electronic Atlas of Ancient Maya Sites](http://mayagis.smv.org/google_earth_data.htm)
 
 ## CSV
 The CSV (Comma Seperated Values) are derived from the KML with some data cleanup and added time data.
