@@ -28,3 +28,9 @@ Either select an existing database connection or setup a new one. If making a ne
 You can keep the default values for geometry column and SRID, even though your SRID is 4326 for WGS84. I think the default of -1 makes the system detect the SRID on its own. ?? Either way this works.
 
 Click the Add button and navigate to the shapefile you saved before. The click OK.
+
+The Shapefile conversion process truncates the database names incorrectly. To fix this run the included psql update file:
+
+```sh
+psql -d maya-sites -f data/db_cleanup.psql
+```

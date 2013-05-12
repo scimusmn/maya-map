@@ -1,0 +1,11 @@
+ALTER TABLE maya_rank_all RENAME eary_precl TO eary_preclassic_2000bc_1000_bc;
+ALTER TABLE maya_rank_all RENAME middle_pre TO middle_preclassic_1000bc_400bc;
+ALTER TABLE maya_rank_all RENAME late_precl TO late_preclassic_400bc_100ad;
+ALTER TABLE maya_rank_all RENAME early_clas TO early_classic_250ad_600ad;
+ALTER TABLE maya_rank_all RENAME late_class TO late_classic_600ad_800ad;
+ALTER TABLE maya_rank_all RENAME terminal_c TO terminal_classic_800ad_900ad;
+ALTER TABLE maya_rank_all RENAME early_post TO early_postclassic_900ad_1200ad;
+ALTER TABLE maya_rank_all RENAME late_postc TO late_postclassic_1200ad_1519ad;
+ALTER TABLE maya_rank_all RENAME post_conqu TO post_conquest_1520ad_1697ad;
+ALTER TABLE maya_rank_all RENAME time_check TO time_check_01;
+ALTER TABLE maya_rank_all RENAME time_che_1 TO time_check_02;
