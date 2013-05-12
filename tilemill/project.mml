@@ -371,7 +371,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT * from maya_rank_all WHERE classic > 0 AND rank = 5) as sites",
+        "table": "(SELECT * from maya_rank_all WHERE rank = 5) as sites",
         "key_field": "gid",
         "geometry_field": "the_geom",
         "extent_cache": "dynamic",
@@ -402,7 +402,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT * from maya_rank_all WHERE classic > 0 AND rank = 4) as sites",
+        "table": "(SELECT * from maya_rank_all WHERE rank = 4) as sites",
         "key_field": "gid",
         "geometry_field": "the_geom",
         "extent_cache": "dynamic",
@@ -433,7 +433,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT * from maya_rank_all WHERE classic > 0 AND rank = 3) as sites",
+        "table": "(SELECT * from maya_rank_all WHERE rank = 3) as sites",
         "key_field": "gid",
         "geometry_field": "the_geom",
         "extent_cache": "dynamic",
@@ -464,7 +464,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT * from maya_rank_all WHERE classic > 0 AND rank = 2) as sites",
+        "table": "(SELECT * from maya_rank_all WHERE rank = 2) as sites",
         "key_field": "gid",
         "geometry_field": "the_geom",
         "extent_cache": "dynamic",
@@ -495,7 +495,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT * from maya_rank_all WHERE classic > 0 AND rank = 1) as sites",
+        "table": "(SELECT * from maya_rank_all WHERE rank = 1) as sites",
         "key_field": "gid",
         "geometry_field": "the_geom",
         "extent_cache": "dynamic",
@@ -526,7 +526,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT * from maya_rank_all WHERE classic > 0) as sites",
+        "table": "(SELECT * from maya_rank_all) as sites",
         "key_field": "gid",
         "geometry_field": "the_geom",
         "extent_cache": "dynamic",
