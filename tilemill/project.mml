@@ -296,7 +296,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-custom-graphic"
+      "name": "maya-custom-graphic",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -698,8 +699,7 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-01",
-      "status": "off"
+      "name": "maya-rank-01"
     },
     {
       "geometry": "point",
