@@ -495,7 +495,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT * from maya_rank_all WHERE rank = 1) as sites",
+        "table": "(SELECT * from maya_rank_all WHERE rank = 1 AND eary_preclassic_2000bc_1000_bc IS NOT NULL) as sites",
         "key_field": "gid",
         "geometry_field": "the_geom",
         "extent_cache": "dynamic",
@@ -699,7 +699,8 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "maya-rank-01"
+      "name": "maya-rank-01",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -730,6 +731,285 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "maya-all",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE post_conquest_1520ad_1697ad IS NOT NULL) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "post-conquest",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "post-conquest",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "post-conquest",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE late_postclassic_1200ad_1519ad IS NOT NULL) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "late-postclassic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "late-postclassic",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "late-postclassic",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE early_postclassic_900ad_1200ad IS NOT NULL) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "early-postclassic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "early-postclassic",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "early-postclassic",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE terminal_classic_800ad_900ad IS NOT NULL) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "terminal-classic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "terminal-classic",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "terminal-classic",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE late_preclassic_400bc_100ad IS NOT NULL) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "late-classic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "late-classic",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "late-classic",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE early_classic_250ad_600ad IS NOT NULL) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "early-classic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "early-classic",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "early-classic",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE late_preclassic_400bc_100ad IS NOT NULL) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "late-preclassic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "late-preclassic",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "late-preclassic",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE middle_preclassic_1000bc_400bc IS NOT NULL) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "middle-preclassic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "middle-preclassic",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "middle-preclassic",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -96.49730251000001,
+        13.194736580000002,
+        -85.56244004,
+        21.60718
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * from maya_rank_all WHERE eary_preclassic_2000bc_1000_bc IS NOT NULL) as sites",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "extent_cache": "dynamic",
+        "extent": "",
+        "dbname": "maya-sites",
+        "host": "localhost",
+        "port": "5432",
+        "user": "bkennedy",
+        "id": "early-preclassic",
+        "project": "maya_map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "early-preclassic",
+      "class": "maya",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "early-preclassic",
       "status": "off"
     }
   ],
