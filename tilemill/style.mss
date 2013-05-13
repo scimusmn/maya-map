@@ -168,6 +168,19 @@ Map {
 
   /* Control room default */
   /*marker-line-color:#938562;*/
+
+  /* Mayan cinabar */
+  /*marker-fill:#771823;*/
+
+  /* Maya tan */
+  marker-fill:#E9CCB0;
+  marker-line-color:#E9CCB0;
+
+  [rank=1] { marker-width:12; }
+  [rank=2] { marker-width:10; }
+  [rank=3] { marker-width:8; }
+  [rank=4] { marker-width:6; }
+  [rank=5] { marker-width:4; }
 }
 
 /* 0-4 */
