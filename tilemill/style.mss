@@ -75,13 +75,20 @@ Map {
 /**********************************************************
  * Land base
  **********************************************************/
-@landbg: #111;
+/* Lighter brown */
+/*@landbg: #68493e;*/
+
+/* Land as basic grey */
+/*@landbg: #111;*/
 
 /* Land as olive green */
 /*@landbg: #493C20;*/
 
 /* Control room default */
 /*@landbg: #0A202A;*/
+
+/* Maya brown - Same as print maps */
+@landbg: #46312A;
 
 #land[zoom>=0] {
   polygon-fill: @landbg;
@@ -158,9 +165,6 @@ Map {
   /* Light tan */
   /*marker-fill:#CF7361;*/
   /*marker-line-color:#D28E4F;*/
-
-  /* Mayan cinabar */
-  marker-fill:#771823;
 
   /* Control room default */
   /*marker-line-color:#938562;*/
