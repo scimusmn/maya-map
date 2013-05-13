@@ -358,6 +358,7 @@ Map {
     text-dx: 10;
   }
 }
+
 .maya-graphic {
   text-name:"[name]";
   text-face-name:@sans;
@@ -372,4 +373,16 @@ Map {
   marker-fill:#ffcc66;
   marker-line-color:#ffcc66;
   marker-width: 5;
+}
+
+.terrain {
+  raster-scaling: bilinear;
+  raster-comp-op: multiply;
+  raster-opacity: .9;
+}
+
+.slope {
+  raster-scaling: bilinear;
+  raster-comp-op: multiply;
+  raster-opacity: .9;
 }
