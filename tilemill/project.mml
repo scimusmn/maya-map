@@ -338,20 +338,6 @@
       "status": "off"
     },
     {
-      "id": "cities",
-      "name": "cities",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip",
-        "id": "cities",
-        "project": "maya_map",
-        "srs": ""
-      },
-      "geometry": "point",
-      "status": "off"
-    },
-    {
       "geometry": "point",
       "extent": [
         -96.49730251000001,
