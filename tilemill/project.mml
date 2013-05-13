@@ -39,6 +39,118 @@
       "geometry": "polygon"
     },
     {
+      "geometry": "raster",
+      "extent": [
+        -100.00041620660342,
+        9.999414210876678,
+        -84.99895527924782,
+        25.000417126006585
+      ],
+      "id": "out",
+      "class": "terrain",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/CIGAR DEMs/out.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "out",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -100.00041620660342,
+        9.999414210876678,
+        -84.99895527924782,
+        25.000417126006585
+      ],
+      "id": "color",
+      "class": "terrain",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/CIGAR DEMs/color.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "color",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -100.00041620660342,
+        14.999214642614577,
+        -94.99960571769498,
+        20.00041700505091
+      ],
+      "id": "color1500",
+      "class": "terrain",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/CIGAR DEMs/color_150_0.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "color1500",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -100.00041620660342,
+        9.999414210876678,
+        -84.99895527924782,
+        25.000417126006585
+      ],
+      "id": "color0255",
+      "class": "terrain",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/CIGAR DEMs/color.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "color0255",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -100.00041620660342,
+        14.999214642614577,
+        -94.99960571769498,
+        20.00041700505091
+      ],
+      "id": "srtm17093785slopesha",
+      "class": "slope",
+      "Datasource": {
+        "file": "/Users/bkennedy/Documents/Maps/CIGAR DEMs/srtm_17_09-3785-slopeshade.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "srtm17093785slopesha"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99998938710385,
+        -85.051,
+        179.99999,
+        85.051
+      ],
+      "id": "ocean-mask",
+      "class": "water-poly",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-ocean.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "ocean-mask"
+    },
+    {
       "id": "lakes",
       "name": "lakes",
       "srs": "",
