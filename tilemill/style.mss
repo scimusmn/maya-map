@@ -9,95 +9,68 @@
 @base: #72B2BC;
 @ocean: @base;
 
-Map { background-color:@ocean; }
-.water-poly { polygon-fill:@ocean; }
-.water { 
-  line-color:#661c1c;
+Map {
+  background-color:@ocean;
 }
-#10mriversnorthameric, #10mriverslakecenterl {
+
+.water-poly {
+  polygon-fill:@ocean; 
+}
+
+.water-line {
+  /*line-color:#661c1c;*/
+  line-color:@base;
+  line-width: 1.2;
+  line-opacity: .9;
+  line-comp-op: overlay;
+}
+
+#rivers-na, #rivers-ca {
+  /*text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;*/
+  /*text-dy: 10;*/
+  /*text-fill: #BBB;*/
+  /*text-placement: line;*/
+  /*text-size: 12;*/
+
+  /* Base river style */
   [zoom>1] {
-    line-width: .03;
-    line-opacity: .5;
+    line-color:@base;
+    line-width: 1.2;
+    line-opacity: .9;
+    line-comp-op: overlay;
   }
   [zoom>5] {
     line-width: .1;
   }
-  /* Biggest rivers
-   *
-   * Always show
-   */
+
+  /* Biggest rivers */
   [ScaleRank<5] {
-    text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
-    text-dy: 10;
-    text-fill: #BBB;
-    text-placement: line;
     line-width: 1;
-    text-size: 12;
     [zoom<5] { line-width: .5; }
   }
-  /* Big rivers
-   *
-   * Always show
-   */
+
+  /* Big rivers */
   [ScaleRank=5] {
-    text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
-    text-dy: 10;
-    text-fill: #BBB;
-    text-placement: line;
     line-width: 1;
-    text-size: 12;
     [zoom<5] { line-width: .5; }
   }
+
+  /* Smaller rivers */
   [ScaleRank=6] {
-    text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
-    text-dy: 10;
-    text-fill: #BBB;
-    text-placement: line;
     line-width: .8;
-    text-size: 12;
     [zoom<5] { line-width: .4; }
   }
   [ScaleRank=7] {
-    [zoom>4] {
-      text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
-      text-dy: 10;
-      text-fill: #BBB;
-      text-placement: line;
-      line-width: .8;
-      text-size: 12;
-    }
-    [zoom>6] {
-      line-width: 1.2;
-    }
+    [zoom>4] { line-width: .8; }
+    [zoom>6] { line-width: 1.2; }
   }
   [ScaleRank=8] {
-    [zoom>5] {
-      text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
-      text-dy: 10;
-      text-fill: #BBB;
-      text-placement: line;
-      line-width: .7;
-      text-size: 12;
-    }
-    [zoom>6] {
-      line-width: .9;
-    }
+    [zoom>5] { line-width: .7; }
+    [zoom>6] { line-width: .9; }
   }
   [ScaleRank>8] {
-    [zoom>6] {
-      text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;
-      text-dy: 10;
-      text-fill: #BBB;
-      text-placement: line;
-      line-width: .8;
-      text-size: 12;
-    }
+    [zoom>6] { line-width: .8; }
   }
-  /*line-opacity:.2;*/
-  /*[zoom>6] {*/
-    /*line-width: .8;*/
-    /*line-opacity:.2;*/
-  /*}*/
 }
 /**********************************************************
  * Land base
