@@ -1109,8 +1109,7 @@
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
-      "name": "early-preclassic",
-      "status": "off"
+      "name": "early-preclassic"
     }
   ],
   "scale": 1,
