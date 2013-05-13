@@ -178,7 +178,7 @@
         75.79347565311913
       ],
       "id": "rivers-ca",
-      "class": "water-lines",
+      "class": "water-line",
       "Datasource": {
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-rivers-lake-centerlines-scale-ranks.zip"
       },
@@ -196,9 +196,12 @@
         82.63966705936913
       ],
       "id": "rivers-na",
-      "class": "water-lines",
+      "class": "water-line",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-rivers-north-america.zip"
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-rivers-north-america.zip",
+        "id": "rivers-na",
+        "project": "maya_map",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -222,8 +225,7 @@
         -85.051,
         179.99999620397597,
         85.051
-      ],
-      "status": "off"
+      ]
     },
     {
       "id": "country-labels",
