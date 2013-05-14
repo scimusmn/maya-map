@@ -88,7 +88,17 @@ Map {
 /*@landbg: #0A202A;*/
 
 /* Maya brown - Same as print maps */
-@landbg: #46312A;
+/*Light brown*/
+/*@landbg: #c9aea5;*/
+/*Medium brown*/
+@landbg: #b69285;
+/*Dark brown*/
+/*@landbg: #906556;*/
+/*White*/
+/*@landbg: #FFF;*/
+/*Black*/
+/*@landbg: #000;*/
+
 
 #land[zoom>=0] {
   polygon-fill: @landbg;
