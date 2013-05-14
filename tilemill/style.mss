@@ -387,14 +387,30 @@ Map {
   marker-width: 5;
 }
 
-.terrain {
+.hillshade, .slope, {
   raster-scaling: bilinear;
   raster-comp-op: multiply;
-  raster-opacity: .9;
+  /*raster-comp-op: overlay;*/
+}
+
+.color {
+  raster-scaling: bilinear;
+  /* Multiply */
+  /*raster-opacity: .9;*/
+  /* Overlay */
+  raster-opacity: .4;
+}
+
+.hillshade {
+  /* Multiply */
+  raster-opacity: .8;
+  /* Overlay */
+  /*raster-opacity: .7;*/
 }
 
 .slope {
-  raster-scaling: bilinear;
-  raster-comp-op: multiply;
-  raster-opacity: .9;
+  /* Multiply */
+  raster-opacity: .7;
+  /* Overlay */
+  /*raster-opacity: .7;*/
 }
