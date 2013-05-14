@@ -183,14 +183,16 @@ Map {
   /*marker-fill:#771823;*/
 
   /* Maya tan */
-  marker-fill:#E9CCB0;
-  marker-line-color:#E9CCB0;
+  /*marker-fill:#E9CCB0;*/
+  marker-fill:#d7a16e;
+  marker-line-color:#110c0a;
+  marker-opacity: .7;
 
-  [rank=1] { marker-width:12; }
-  [rank=2] { marker-width:10; }
-  [rank=3] { marker-width:8; }
-  [rank=4] { marker-width:6; }
-  [rank=5] { marker-width:4; }
+  [rank=1] { marker-width:24; }
+  [rank=2] { marker-width:18; }
+  [rank=3] { marker-width:16; }
+  [rank=4] { marker-width:12; }
+  [rank=5] { marker-width:8; }
 }
 
 /* 0-4 */
