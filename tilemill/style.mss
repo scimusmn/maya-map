@@ -118,30 +118,29 @@ Map {
 /**********************************************************
  * Political boundaries
  **********************************************************/
-#country-boundaries[zoom>1],
-#country-outlines[zoom>1],
-#subcountry-boundaries[zoom>4] {
+#country-boundaries {
   line-color:#8f8f8f;
 }
-#country-boundaries[zoom>1],
-#country-outlines[zoom>1]{
-  line-dasharray:1,3;
-  line-width:1.5;
-  line-opacity:0.5;
-  [zoom=4] { line-width:0.6; }
-  [zoom=5] { line-width:0.8; }
-  [zoom=6] { line-width:1; }
-  [zoom=7] { line-width:1.2; }
-  [zoom=8] { line-width:1.4; }
-  [zoom>8] { line-width:1.6; }
-}
-#subcountry-boundaries[COUNTRYNAM='US'][zoom=4],
-#subcountry-boundaries[COUNTRYNAM='Canada'][zoom=4],
-#subcountry-boundaries[COUNTRYNAM='Australia'][zoom=4],
-#subcountry-boundaries[zoom>4] {
+/*#country-boundaries[zoom>1],*/
+/*#country-outlines[zoom>1]{*/
+  /*line-dasharray:1,3;*/
+  /*line-width:1.5;*/
+  /*line-opacity:0.5;*/
+  /*[zoom=4] { line-width:0.6; }*/
+  /*[zoom=5] { line-width:0.8; }*/
+  /*[zoom=6] { line-width:1; }*/
+  /*[zoom=7] { line-width:1.2; }*/
+  /*[zoom=8] { line-width:1.4; }*/
+  /*[zoom>8] { line-width:1.6; }*/
+/*}*/
+/*#subcountry-boundaries[COUNTRYNAM='US'][zoom=4],*/
+/*#subcountry-boundaries[COUNTRYNAM='Canada'][zoom=4],*/
+/*#subcountry-boundaries[COUNTRYNAM='Australia'][zoom=4],*/
+#subcountry-boundaries {
+  line-color:#8f8f8f;
   line-dasharray:4,2;
-  line-opacity:0.2;
-  line-width:0.4;
+  line-opacity:0.5;
+  line-width:.4;
   [zoom=5] { line-width:0.5; }
   [zoom=6] { line-width:0.6; }
   [zoom=7] { line-width:0.8; }
