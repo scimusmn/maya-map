@@ -97,9 +97,13 @@ Map {
 /*Light brown*/
 /*@landbg: #c9aea5;*/
 /*Medium brown*/
-@landbg: #b69285;
+/*@landbg: #b69285;*/
 /*Dark brown*/
-/*@landbg: #906556;*/
+@landbg: #906556;
+/*Very dark brown*/
+/*@landbg: #261a16;*/
+/* Brown from Maya print maps*/
+/*@landbg: #46312A;*/
 /*White*/
 /*@landbg: #FFF;*/
 /*Black*/
