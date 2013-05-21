@@ -18,61 +18,66 @@ Map {
   polygon-fill:@ocean; 
 }
 
-.water-line {
-  /*line-color:#661c1c;*/
-  line-color:@base;
-  line-width: 1.2;
-  line-opacity: .9;
-  line-comp-op: overlay;
+.water-line::glow {
+  line-color:#548696;
+  line-opacity: .4;
+  line-comp-op: multiply;
+  line-width: 3;
 }
 
-#rivers-na, #rivers-ca {
-  /*text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;*/
-  /*text-dy: 10;*/
-  /*text-fill: #BBB;*/
-  /*text-placement: line;*/
-  /*text-size: 12;*/
-
-  /* Base river style */
-  [zoom>1] {
-    line-color:@base;
-    line-width: 1.2;
-    line-opacity: .9;
-    line-comp-op: overlay;
-  }
-  [zoom>5] {
-    line-width: .1;
-  }
-
-  /* Biggest rivers */
-  [ScaleRank<5] {
-    line-width: 1;
-    [zoom<5] { line-width: .5; }
-  }
-
-  /* Big rivers */
-  [ScaleRank=5] {
-    line-width: 1;
-    [zoom<5] { line-width: .5; }
-  }
-
-  /* Smaller rivers */
-  [ScaleRank=6] {
-    line-width: .8;
-    [zoom<5] { line-width: .4; }
-  }
-  [ScaleRank=7] {
-    [zoom>4] { line-width: .8; }
-    [zoom>6] { line-width: 1.2; }
-  }
-  [ScaleRank=8] {
-    [zoom>5] { line-width: .7; }
-    [zoom>6] { line-width: .9; }
-  }
-  [ScaleRank>8] {
-    [zoom>6] { line-width: .8; }
-  }
+.water-line::glowtwo {
+  line-color:#b0cad3;
+  line-opacity: .18;
+  line-width: 1;
 }
+
+/*#rivers-na, #rivers-ca {*/
+  /*[>text-name:"[Name]"; text-face-name:@sans; text-allow-overlap: true;<]*/
+  /*[>text-dy: 10;<]*/
+  /*[>text-fill: #BBB;<]*/
+  /*[>text-placement: line;<]*/
+  /*[>text-size: 12;<]*/
+
+  /*[> Base river style <]*/
+  /*[zoom>1] {*/
+    /*line-color:@base;*/
+    /*line-width: 1.2;*/
+    /*line-opacity: .9;*/
+    /*line-comp-op: overlay;*/
+  /*}*/
+  /*[zoom>5] {*/
+    /*line-width: .1;*/
+  /*}*/
+
+  /*[> Biggest rivers <]*/
+  /*[ScaleRank<5] {*/
+    /*line-width: 1;*/
+    /*[zoom<5] { line-width: .5; }*/
+  /*}*/
+
+  /*[> Big rivers <]*/
+  /*[ScaleRank=5] {*/
+    /*line-width: 1;*/
+    /*[zoom<5] { line-width: .5; }*/
+  /*}*/
+
+  /*[> Smaller rivers <]*/
+  /*[ScaleRank=6] {*/
+    /*line-width: .8;*/
+    /*[zoom<5] { line-width: .4; }*/
+  /*}*/
+  /*[ScaleRank=7] {*/
+    /*[zoom>4] { line-width: .8; }*/
+    /*[zoom>6] { line-width: 1.2; }*/
+  /*}*/
+  /*[ScaleRank=8] {*/
+    /*[zoom>5] { line-width: .7; }*/
+    /*[zoom>6] { line-width: .9; }*/
+  /*}*/
+  /*[ScaleRank>8] {*/
+    /*[zoom>6] { line-width: .8; }*/
+  /*}*/
+/*}*/
 /**********************************************************
  * Land base
  **********************************************************/
